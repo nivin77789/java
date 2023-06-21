@@ -1,8 +1,12 @@
+import javax.naming.spi.DirStateFactory.Result;
+
 public class DS1{
     public static void main(String args[])
     {
-        byte a=23;
-        String c="Nivin";
-        System.out.println("Hi "+c+ " age : "+a);
+        int a=23;
+        int b=77;
+        String c="Result = ";
+        int result=a+b;
+        System.out.println(c+""+result);
     }
 }
