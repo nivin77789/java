@@ -10,11 +10,14 @@ public class DS1{
         // int b=77;
         // int result=a+b;
         // System.out.println(c+"is your name and the result is : "+result);
-System.out.println("Enter length of th sides of a squre");
+System.out.println("Enter the cost of pen , pencil and eraser");
 Scanner sc=new Scanner(System.in);
-int a=sc.nextInt();
-int sqr= a*a;
-System.out.println("the area of the square is : "+sqr);
+float a=sc.nextFloat();
+float b=sc.nextFloat();
+float c=sc.nextFloat();
+float sum= a+b+c;
+float total= ((sum/100)*18)+sum;
+System.out.println("the total value of the products is : "+total);
 
     }
 }
