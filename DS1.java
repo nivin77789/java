@@ -10,12 +10,11 @@ public class DS1{
         // int b=77;
         // int result=a+b;
         // System.out.println(c+"is your name and the result is : "+result);
-System.out.println("Enter 3 numbers");
+System.out.println("Enter length of th sides of a squre");
 Scanner sc=new Scanner(System.in);
 int a=sc.nextInt();
-int b=sc.nextInt();
-int c=sc.nextInt();
-int avg= (a+b+c)/3;
-System.out.println("the average of two numbers is : "+avg);
+int sqr= a*a;
+System.out.println("the area of the square is : "+sqr);
+
     }
 }
