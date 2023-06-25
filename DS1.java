@@ -20,12 +20,12 @@ public class DS1{
 // float total= ((sum/100)*18)+sum;
 // System.out.println("the total value of the products is : "+total);
 //day4
-double temp=103.5;
-if(temp>100){
-    System.out.println("fever");
-} else {
-    System.out.println("no fever");
-}
+// double temp=103.5;
+// if(temp>100){
+//     System.out.println("fever");
+// } else {
+//     System.out.println("no fever");
+// }
 // Scanner sc=new Scanner(System.in);
 // int a=sc.nextInt();
 // if (a>0) {
@@ -35,6 +35,24 @@ if(temp>100){
 // } else {
 //     System.out.println("zero");
 // }
-
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+switch(a){
+    case 1 : System.out.println("sun");
+        break;
+    case 2 : System.out.println("mon");
+        break;
+    case 3 : System.out.println("tue");
+        break;
+    case 4 : System.out.println("wed");
+        break;
+    case 5 : System.out.println("thur");
+        break;
+    case 6 : System.out.println("fri");
+        break;
+    case 7 : System.out.println("sat");
+        break;
+    default: System.out.println("zero");    
+}
     }
 }
