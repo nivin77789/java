@@ -20,15 +20,21 @@ public class DS1{
 // float total= ((sum/100)*18)+sum;
 // System.out.println("the total value of the products is : "+total);
 //day4
-Scanner sc=new Scanner(System.in);
-int a=sc.nextInt();
-if (a>0) {
-    System.out.println("positive");
-} else if(a<0) {
-    System.out.println("negative");
+double temp=103.5;
+if(temp>100){
+    System.out.println("fever");
 } else {
-    System.out.println("zero");
+    System.out.println("no fever");
 }
+// Scanner sc=new Scanner(System.in);
+// int a=sc.nextInt();
+// if (a>0) {
+//     System.out.println("positive");
+// } else if(a<0) {
+//     System.out.println("negative");
+// } else {
+//     System.out.println("zero");
+// }
 
     }
 }
