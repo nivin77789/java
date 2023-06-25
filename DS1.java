@@ -35,24 +35,37 @@ public class DS1{
 // } else {
 //     System.out.println("zero");
 // }
-Scanner sc=new Scanner(System.in);
-int a=sc.nextInt();
-switch(a){
-    case 1 : System.out.println("sun");
-        break;
-    case 2 : System.out.println("mon");
-        break;
-    case 3 : System.out.println("tue");
-        break;
-    case 4 : System.out.println("wed");
-        break;
-    case 5 : System.out.println("thur");
-        break;
-    case 6 : System.out.println("fri");
-        break;
-    case 7 : System.out.println("sat");
-        break;
-    default: System.out.println("zero");    
+// Scanner sc=new Scanner(System.in);
+// int a=sc.nextInt();
+// switch(a){
+//     case 1 : System.out.println("sun");
+//         break;
+//     case 2 : System.out.println("mon");
+//         break;
+//     case 3 : System.out.println("tue");
+//         break;
+//     case 4 : System.out.println("wed");
+//         break;
+//     case 5 : System.out.println("thur");
+//         break;
+//     case 6 : System.out.println("fri");
+//         break;
+//     case 7 : System.out.println("sat");
+//         break;
+//     default: System.out.println("zero");    
+// }
+
+Scanner sc = new Scanner(System.in);
+System.out.print("Input the year: ");
+int year = sc.nextInt();
+boolean x = (year % 4) == 0;
+boolean y = (year % 100) != 0;
+boolean z = ((year % 100 == 0) && (year % 400 == 0));
+if (x && (y || z)) {
+System.out.println(year + " is a leap year");
+} else {
+System.out.println(year + " is not a leap year");
 }
+
     }
 }
