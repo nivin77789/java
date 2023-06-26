@@ -73,11 +73,11 @@ int num; // To hold number
 int fact = 1; // To hold factorial
 System.out.print("Enter any positive integer: ");
 num = sc.nextInt();
-for(int i=1; i<=num; i++) {
+for(int i=0; i<=num; i++) {
 fact *= i;
 }
+
 System.out.println("Factorial: "+ fact);
 System.out.println("Factorial is generated Successfully");
-
     }
 }
