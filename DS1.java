@@ -69,28 +69,14 @@ public class DS1{
 
 
 Scanner sc=new Scanner(System.in);
-
-int a;
-int e=0;
-int o=0;
-int c;
-
-do{
-    System.out.println("Enter a number");
-    a=sc.nextInt();
-    if(a%2==0){
-        e+=a;
-    }else{
-        o+=a;
-    }
-    System.out.println("Enter a 0 to stop and 1 to continue");
-    c=sc.nextInt();
-}while(c==1);
+System.out.println("Enter a number");
+int a=sc.nextInt();
 
 
-System.out.println("Sum of even number is "+e+ " and the sum of odd number is "+o);
-
-
+for(int i=1; i<=10; i++)
+{
+    System.out.println(i+" x "+a+" = "+(a*i));
+}
 
     }
 }
