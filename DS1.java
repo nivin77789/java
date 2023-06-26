@@ -67,7 +67,7 @@ public class DS1{
 // System.out.println(year + " is not a leap year");
 // }
 
-
+//day 5
 Scanner sc = new Scanner(System.in);
 int num; // To hold number
 int fact = 1; // To hold factorial
