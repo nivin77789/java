@@ -55,17 +55,42 @@ public class DS1{
 //     default: System.out.println("zero");    
 // }
 
-Scanner sc = new Scanner(System.in);
-System.out.print("Input the year: ");
-int year = sc.nextInt();
-boolean x = (year % 4) == 0;
-boolean y = (year % 100) != 0;
-boolean z = ((year % 100 == 0) && (year % 400 == 0));
-if (x && (y || z)) {
-System.out.println(year + " is a leap year");
-} else {
-System.out.println(year + " is not a leap year");
-}
+// Scanner sc = new Scanner(System.in);
+// System.out.print("Input the year: ");
+// int year = sc.nextInt();
+// boolean x = (year % 4) == 0;
+// boolean y = (year % 100) != 0;
+// boolean z = ((year % 100 == 0) && (year % 400 == 0));
+// if (x && (y || z)) {
+// System.out.println(year + " is a leap year");
+// } else {
+// System.out.println(year + " is not a leap year");
+// }
+
+
+Scanner sc=new Scanner(System.in);
+
+int a;
+int e=0;
+int o=0;
+int c;
+
+do{
+    System.out.println("Enter a number");
+    a=sc.nextInt();
+    if(a%2==0){
+        e+=a;
+    }else{
+        o+=a;
+    }
+    System.out.println("Enter a 0 to stop and 1 to continue");
+    c=sc.nextInt();
+}while(c==1);
+
+
+System.out.println("Sum of even number is "+e+ " and the sum of odd number is "+o);
+
+
 
     }
 }
