@@ -77,7 +77,7 @@ for(int i=1; i<=num; i++) {
 fact *= i;
 }
 System.out.println("Factorial: "+ fact);
-
+System.out.println("Factorial is generated Successfully");
 
     }
 }
