@@ -68,15 +68,16 @@ public class DS1{
 // }
 
 
-Scanner sc=new Scanner(System.in);
-System.out.println("Enter a number");
-int a=sc.nextInt();
-
-
-for(int i=1; i<=10; i++)
-{
-    System.out.println(i+" x "+a+" = "+(a*i));
+Scanner sc = new Scanner(System.in);
+int num; // To hold number
+int fact = 1; // To hold factorial
+System.out.print("Enter any positive integer: ");
+num = sc.nextInt();
+for(int i=1; i<=num; i++) {
+fact *= i;
 }
+System.out.println("Factorial: "+ fact);
+
 
     }
 }
