@@ -68,16 +68,28 @@ public class DS1{
 // }
 
 //day 5
-Scanner sc = new Scanner(System.in);
-int num; // To hold number
-int fact = 1; // To hold factorial
-System.out.print("Enter any positive integer: ");
-num = sc.nextInt();
-for(int i=1; i<=num; i++) {
-fact *= i;
+// Scanner sc = new Scanner(System.in);
+// int num; // To hold number
+// int fact = 1; // To hold factorial
+// System.out.print("Enter any positive integer: ");
+// num = sc.nextInt();
+// for(int i=1; i<=num; i++) {
+// fact *= i;
+// }
+
+// System.out.println("Factorial: "+ fact);
+// System.out.println("Factorial is generated Successfully");
+
+for(int i=1; i<=5; i++)
+{
+    for(int j=1; j<=i; j++)
+    {
+        System.out.print("*");
+    }
+    System.out.println(" ");
 }
 
-System.out.println("Factorial: "+ fact);
-System.out.println("Factorial is generated Successfully");
+
+
     }
 }
