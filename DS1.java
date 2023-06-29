@@ -79,13 +79,16 @@ public class DS1{
 
 // System.out.println("Factorial: "+ fact);
 // System.out.println("Factorial is generated Successfully");
-int n=5;
+int n=5,s=1;
 char a='A';
+
 for(int i=1; i<=n; i++)
 {
     for(int j=1; j<=i; j++)
     {
         System.out.print(a);
+        System.out.print(s);
+        s++;
         a++;
         
     }
