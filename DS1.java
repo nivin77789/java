@@ -15,7 +15,7 @@ public class DS1{
 System.out.println("enter the value of n and r: ");
         int n=sc.nextInt();
         int r=sc.nextInt();
-int f=hello(n)/hello(r)*(n-r);
+int f=hello(n)/(hello(r)*hello(n-r));
 System.out.println("nCr is : "+f);
     }
 }
