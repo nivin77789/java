@@ -1,4 +1,4 @@
-import javax.naming.spi.DirStateFactory.Result;
+
 import java.util.*;
 public class DS1{
     public static int hello(int n){
@@ -12,9 +12,10 @@ public class DS1{
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-System.out.println("Factorial number : ");
+System.out.println("enter the value of n and r: ");
         int n=sc.nextInt();
-int r=hello(n);
-System.out.println("Factorial is : "+r);
+        int r=sc.nextInt();
+int f=hello(n)/hello(r)*(n-r);
+System.out.println("nCr is : "+f);
     }
 }
