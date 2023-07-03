@@ -13,7 +13,7 @@ public class DS1{
             n/=2;
         }
 
-System.out.println("Binary number is : "+d);
+System.out.println("Decimal number is : "+d);
     }
     public static void main(String args[])
     {
