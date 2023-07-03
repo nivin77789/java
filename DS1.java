@@ -1,21 +1,25 @@
 
 import java.util.*;
 public class DS1{
-    public static int hello(int n){
-        int f=1;
-        for(int i=1; i<=n; i++)
+    public static void hello(int n){
+        int d=0;
+        int p=0;
+        while(n>0)
         {
-            f*=i;
+            int l=n%10;
+          
+            d+=l*(int)Math.pow(2,p);
+            p++;
+            n/=10;
         }
-        return f;
+
+System.out.println("Decimal number is : "+d);
     }
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-System.out.println("enter the value of n and r: ");
+System.out.println("enter the binary number : ");
         int n=sc.nextInt();
-        int r=sc.nextInt();
-int f=hello(n)/(hello(r)*hello(n-r));
-System.out.println("nCr is : "+f);
+hello(n);
     }
 }
