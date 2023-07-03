@@ -6,14 +6,14 @@ public class DS1{
         int p=0;
         while(n>0)
         {
-            int l=n%10;
+            int l=n%2;
           
-            d+=l*(int)Math.pow(2,p);
+            d+=l*(int)Math.pow(10,p);
             p++;
-            n/=10;
+            n/=2;
         }
 
-System.out.println("Decimal number is : "+d);
+System.out.println("Binary number is : "+d);
     }
     public static void main(String args[])
     {
