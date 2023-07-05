@@ -2,15 +2,31 @@
 import java.util.*;
 public class DS1{
     public static void hello(int a){
-        int j=1;
-        int b=1;
+        
         for(int k=1; k<=a; k++){
-for(int i=1; i<=b; i++){
-            System.out.print(j++);
-
-
+for(int i=1; i<=k; i++){
+        System.out.print("*");
+   }
+   for(int i=1; i<=2*(a-k); i++){
+        System.out.print(" ");
+   }
+   for(int i=1; i<=k; i++){
+        System.out.print("*");
+   }
+   
+   System.out.println();
         }
-        b++;
+         for(int k=a; k>=1; k--){
+for(int i=k; i>=1; i--){
+        System.out.print("*");
+   }
+   for(int i=2*(a-k); i>=1; i--){
+        System.out.print(" ");
+   }
+   for(int i=k; i>=1; i--){
+        System.out.print("*");
+   }
+   
    System.out.println();
         }
         
