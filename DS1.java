@@ -2,11 +2,8 @@
 import java.util.*;
 public class DS1{
     public static Boolean hello(int a ){
-    if(a%2==0){
-        return true;
-    } else {
-        return false;
-    }
+    
+        
     }
     public static void main(String args[])
     {
