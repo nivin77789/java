@@ -2,7 +2,7 @@
 import java.util.*;
 public class DS1{
     public static void hello(int a , int b ){
-        int r=Math.min(a,b);
+        int r=Math.max(a,b);
         System.out.println(r);
     
 
