@@ -9,9 +9,14 @@ public class DS1{
           {
 System.out.print(" ");
           }
-          for(int j=1; j<a; j++)
+          for(int j=1; j<=a; j++)
           {
+               if(i==1 | j==1 | i==a | j==a){
 System.out.print("*");
+               } else {
+                    System.out.print(" ");
+               }
+
           }
 System.out.println();
        }
