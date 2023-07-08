@@ -28,7 +28,7 @@ public class DS1{
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-int arr[]={2,4,-2,6,1,1,9,-2};
+int arr[]={2,4,-2,6,1,1,4,-2};
          // System.out.println("array before revercing: ");
          // for(int i=0; i<arr.length; i++){
          //    for(int j=0; j<arr.length; j++){
