@@ -37,7 +37,6 @@ int arr[]={2,4,-2,6,1,2,3,36};
        
          // }
        hello(arr);
-            hello(arr);
 
     }
 }
