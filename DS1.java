@@ -4,24 +4,31 @@ public class DS1{
     public static void hello(int arr[])
     {
      int ts=0;
+     int c=0;
+     int max=Integer.MIN_VALUE;
      for(int i=0; i<arr.length; i++){
       int start=i;
       for(int j=0; j<arr.length; j++){
          int end=j;
+         c=0;
          for(int k=start; k<=end; k++){
-            System.out.print(arr[k]+"  ");
+            c+=arr[k];
+            
          }
-         ts++;
+        System.out.print(c);
+        if(max<c){
+         max=c;
+        }
          System.out.println();
       }
-      System.out.println();
+  
      }
-     System.out.println("total : "+ts);
+         System.out.println("max="+max);
     }
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-int arr[]={2,4,6,8,10};
+int arr[]={2,4,-2,6,1,10,9,-2};
          // System.out.println("array before revercing: ");
          // for(int i=0; i<arr.length; i++){
          //    for(int j=0; j<arr.length; j++){
