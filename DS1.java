@@ -34,7 +34,6 @@ int arr[]={2,4,-2,6,1,1,9,-2};
          //    for(int j=0; j<arr.length; j++){
          //       System.out.print("("+arr[i]+","+arr[j]+")  ");
          //    }
-        System.out.print("sjdh");
        
          // }
        hello(arr);
