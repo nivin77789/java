@@ -55,11 +55,11 @@ public class DS1{
 
  return res;
 
- 
+
     }
     public static void main(String args[])
     {
-int arr[]={0 , 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+int arr[]={4,2,0,6,3,2,5};
          System.out.println(hello(arr));
 
     }
