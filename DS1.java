@@ -32,24 +32,30 @@ public class DS1{
    return 0;
  }
  int[] leftMax = new int[n];
-
  int[] rightMax = new int[n];
 
- leftMax[0] = arr[0];
 
+
+ leftMax[0] = arr[0];
  for (int i = 1; i < leftMax.length; i++) {
    leftMax[i] = Math.max(leftMax[i - 1], arr[i]);
  }
 
- rightMax[n - 1] = arr[n- 1];
 
- for (int j = rightMax.length - 2; j >= 0; j--) {
-   rightMax[j] = Math.max(rightMax[j + 1], arr[j]);
+ rightMax[n - 1] = arr[n- 1];
+ for (int i = n - 2; i >= 0; i--) {
+   rightMax[i] = Math.max(rightMax[i + 1], arr[i]);
  }
- for (int x = 0; x < n; x++) {
-   res += Math.min(leftMax[x], rightMax[x]) - arr[x];
+
+
+
+ for (int i = 0; i < n; i++) {
+   res += Math.min(leftMax[i], rightMax[i]) - arr[i];
  }
+
  return res;
+
+ 
     }
     public static void main(String args[])
     {
