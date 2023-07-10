@@ -59,7 +59,7 @@ public class DS1{
     }
     public static void main(String args[])
     {
-int arr[]={4,2,0,6,3,2,5};
+int arr[]={4,2,0,6,3,2};
          System.out.println(hello(arr));
 
     }
