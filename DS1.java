@@ -56,7 +56,7 @@ minpos=j;
         arr[minpos]=arr[i];
         arr[i]=temp;
       }
-      System.out.println("insertion sort");
+      System.out.println("Selection sort");
        for(int i=0; i<n; i++){
 System.out.print(arr[i]);
      System.out.print("  ");
