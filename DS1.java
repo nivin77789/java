@@ -62,11 +62,32 @@ System.out.print(arr[i]);
      System.out.print("  ");
        }
     }
+    public static void ins(int arr[]){
+      int n=arr.length;
+    
+      for(int i=1; i<n; i++){
+        int curr=i;
+        int prev=i-1;
+        while(prev>=0 && arr[prev]> arr[curr]){
+          arr[prev+1]= arr[prev];
+          prev--;
+        }
+           arr[prev+1]=curr;
+      }
+           System.out.println("  ");
+         System.out.println("Inserton sort");
+       for(int i=0; i<n; i++){
+System.out.print(arr[i]);
+     System.out.print("  ");
+       }
+    }
     public static void main(String args[])
     {
 int arr[]={3,6,7,2,1,8,5,9,4};
         hello(arr);
         sel(arr);
+        ins(arr);
+
 
     }
 }
