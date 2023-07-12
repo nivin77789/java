@@ -1,7 +1,10 @@
 
 import java.util.*;
 public class DS1{
-    public static void hello(int[] arr)
+
+  //bubble sort
+
+    public static void hello(int[] arrn)
     {
     //   int n=arr.length;
     //   //left max
@@ -24,70 +27,110 @@ public class DS1{
     //      trappedwater+=waterlevel-arr[i];
     //   }
     // return trappedwater;
-int n=arr.length;
+
+
+
+    
+int n=arrn.length;
 int temp=0;
 for(int i=0; i<n-1; i++){
   for(int j=0; j<n-1-i; j++){
-    if(arr[j]>arr[j+1]){
-     temp=arr[j];
-     arr[j]=arr[j+1];
-     arr[j+1]=temp;
+    if(arrn[j]>arrn[j+1]){
+     temp=arrn[j];
+     arrn[j]=arrn[j+1];
+     arrn[j+1]=temp;
     }
   }
 }
    System.out.println("Bubble sort");
   for(int k=0; k<n; k++){
-    System.out.print(arr[k]);
+    System.out.print(arrn[k]);
      System.out.print("  ");
   }
   System.out.println("");
 
     }
-    public static void sel(int arr[]){
-      int n=arr.length;
+
+
+
+    //selection sort
+
+
+
+    public static void sel(int arrb[]){
+      int n=arrb.length;
       for(int i=0; i<n-1; i++){
         int minpos=i;
         for(int j=i+1; j<n; j++){
-if( arr[minpos]< arr[j]){
+if( arrb[minpos]< arrb[j]){
 minpos=j;
 }
         }
-        int temp=arr[minpos];
-        arr[minpos]=arr[i];
-        arr[i]=temp;
+        int temp=arrb[minpos];
+        arrb[minpos]=arrb[i];
+        arrb[i]=temp;
       }
       System.out.println("Selection sort");
        for(int i=0; i<n; i++){
-System.out.print(arr[i]);
+System.out.print(arrb[i]);
      System.out.print("  ");
        }
     }
-    public static void ins(int arr[]){
-      int n=arr.length;
+
+
+
+    //insertion sort
+
+
+
+    public static void ins(int arrs[]){
+      int n=arrs.length;
     
       for(int i=1; i<n; i++){
-        int curr=arr[i];
+        int curr=arrs[i];
         int prev=i-1;
-        while(prev>=0 && arr[prev]> curr){
-          arr[prev+1]= arr[prev];
+        while(prev>=0 && arrs[prev]> curr){
+          arrs[prev+1]= arrs[prev];
           prev--;
         }
-           arr[prev+1]=curr;
+           arrs[prev+1]=curr;
       }
            System.out.println("  ");
          System.out.println("Inserton sort");
        for(int i=0; i<n; i++){
-System.out.print(arr[i]);
+System.out.print(arrs[i]);
      System.out.print("  ");
        }
           System.out.println("  ");
     }
+
+
+
+
+    //inbuilt sort
+
+
+    public static void inb(int arri[]){
+            int n=arri.length;
+      Arrays.sort(arri,0,n);
+       System.out.println("Inbuilt sort \n" );
+       for(int i=0; i<n; i++){
+System.out.print(arri[i]);
+     System.out.print("  ");
+       }
+    }
     public static void main(String args[])
     {
 int arr[]={3,6,7,2,1,8,5,9,4,10,11,15,13,14,12};
+int arra[]={3,6,7,2,1,8,5,9,4,10,11,15,13,14,12};
+int arrb[]={3,6,7,2,1,8,5,9,4,10,11,15,13,14,12};
+int arrc[]={3,6,7,2,1,8,5,9,4,10,11,15,13,14,12};
+
         hello(arr);
-        sel(arr);
-        ins(arr);
+        sel(arra);
+        ins(arrb);
+        inb(arrc);
+        
 
 
     }
