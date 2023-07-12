@@ -110,9 +110,9 @@ System.out.print(arrs[i]);
     //inbuilt sort
 
 
-    public static void inb(int arri[]){
+    public static void inb(Integer arri[]){
             int n=arri.length;
-      Arrays.sort(arri,0,n);
+      Arrays.sort(arri,Collections.reverseOrder());
        System.out.println("Inbuilt sort \n" );
        for(int i=0; i<n; i++){
 System.out.print(arri[i]);
@@ -124,7 +124,7 @@ System.out.print(arri[i]);
 int arr[]={3,6,7,2,1,8,5,9,4,10,11,15,13,14,12};
 int arra[]={3,6,7,2,1,8,5,9,4,10,11,15,13,14,12};
 int arrb[]={3,6,7,2,1,8,5,9,4,10,11,15,13,14,12};
-int arrc[]={3,6,7,2,1,8,5,9,4,10,11,15,13,14,12};
+Integer arrc[]={3,6,7,2,1,8,5,9,4,10,11,15,13,14,12};
 
         hello(arr);
         sel(arra);
