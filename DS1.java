@@ -84,7 +84,7 @@ System.out.print(arr[i]);
     }
     public static void main(String args[])
     {
-int arr[]={3,6,7,2,1,8,5,9,4};
+int arr[]={3,6,7,2,1,8,5,9,4,10,11,15,13,14,12};
         hello(arr);
         sel(arr);
         ins(arr);
