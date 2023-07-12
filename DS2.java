@@ -4,14 +4,32 @@ public class DS2{
 
 
 
-    public static void inb(Integer arri[]){
-            int n=arri.length;
-      Arrays.sort(arri,Collections.reverseOrder());
-       System.out.println("Inbuilt sort \n" );
-       for(int i=0; i<n; i++){
-System.out.print(arri[i]);
-     System.out.print("  ");
-       }
+    public static void inb(int arr[][]){
+            int r=arr.length-1;
+            int c=arr[0].length-1;
+            int rstart=0;
+            int cstart=0;
+
+      while(rstart<=r && cstart<=c) {
+                for(int i=cstart; i<=c; i++){
+                    System.out.print(arr[rstart][i]+"  ");
+                }
+              
+               for(int i=rstart+1; i<=r; i++){
+                    System.out.print(arr[i][c]+"  ");
+                }
+            for(int i=c-1; i>=cstart; i--){
+                    System.out.print(arr[r][i]+"  ");
+                }
+                for(int i=r-1; i>=rstart+1; i--){
+                     System.out.print(arr[i][cstart]+"  ");
+                }
+           r--;
+           c--;
+           rstart++;
+           cstart++;
+            }
+
     }
 
 
@@ -19,7 +37,11 @@ System.out.print(arri[i]);
     public static void main(String args[])
     {
 
-Integer arrc[]={3,6,7,2,1,8,5,9,4,10,11,15,13,14,12};
+int arrc[][]={{1,2,3,4,5},
+              {5,6,7,8,2},
+              {2,3,4,5,1},
+              {2,3,4,5,1},
+              {9,3,2,1,0}};
 
     
         inb(arrc);
