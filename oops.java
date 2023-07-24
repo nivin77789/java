@@ -4,6 +4,10 @@ public class oops {
         p1.tip=99;
         
 System.out.println(p1.color +" colour and the tip is "+ p1.tip);
+p1.setColor("green");
+p1.settip(7);
+System.out.println(p1.color +" colour and the tip is "+ p1.tip);
+
     }
     
 }
