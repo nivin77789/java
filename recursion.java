@@ -3,9 +3,9 @@ public class recursion {
 if(n==0){
     return;
 }
- 
-        System.out.println(n+10);
-        rec(n-1);
+ rec(n-1);
+        System.out.println(n);
+        
    
 }
     public static void main(String args[]){
