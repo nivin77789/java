@@ -4,7 +4,7 @@ if(n==0){
     return;
 }
  
-        System.out.println(n+9);
+        System.out.println(n+10);
         rec(n-1);
    
 }
