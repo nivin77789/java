@@ -12,7 +12,7 @@ int fn= feb1+feb2;
 return fn; 
 }
     public static void main(String args[]){
-        System.out.println(rec(50));
+        System.out.println(rec(5));
 
     }
 }
