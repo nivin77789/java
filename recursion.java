@@ -1,16 +1,17 @@
 public class recursion {
-    public static void rec(int n){
-if(n==0){
-    return;
+    public static int rec(int n){
+       
+       
+if(n==1){
+    return 1;
 }
- rec(n-1);
-        System.out.println(n);
-        
+int fn= n+rec(n-1); 
+
+return fn; 
    
 }
     public static void main(String args[]){
-        
+        System.out.println(rec(5));
 
-rec(9);
     }
 }
