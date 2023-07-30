@@ -1,18 +1,16 @@
 public class recursion {
-    public static int rec(int n){
-       
-       
-if(n==1 | n==0){
-    return n;
-}
-int feb1=rec(n-1);
-int feb2=rec(n-2);
-int fn= feb1+feb2; 
-
-return fn; 
+    public static int rec(int arr[],int key, int i){
+       if(arr[i]==arr.length){
+        return -1;
+       }
+       if(arr[i]==key){
+        return i;
+       }
+return rec(arr,key,i+1);
 }
     public static void main(String args[]){
-        System.out.println(rec(5));
+        int arr[]={1,2,3,4,5,6,7,8};
+        System.out.println(rec(arr,2,0)+1);
 
     }
 }
