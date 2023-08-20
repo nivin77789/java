@@ -34,7 +34,7 @@ public static void pat5(int row){
     /* output
        1
        01d
-       101f
+       101
        0101
      */
 }
