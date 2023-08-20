@@ -38,7 +38,7 @@ public static void pat5(int row){
        0101
      */
 }
-4
+45
 123
 public static void pat4(int row){
     int k=1;
