@@ -30,7 +30,7 @@ public static void pat5(int row){
     }
     
 12344567
-8
+89
     /* output
        1
        01
