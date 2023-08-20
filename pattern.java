@@ -33,7 +33,7 @@ public static void pat5(int row){
 
     /* output
        1
-       01dszs
+       01dsz
        101fsf
        0101dsf
      */
