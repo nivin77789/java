@@ -29,7 +29,7 @@ public static void pat5(int row){
     System.out.println();
     }
     
-1234567
+12345678
 
     /* output
        1
