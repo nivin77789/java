@@ -37,8 +37,7 @@ public static void pat5(int row){
        101
        0101
      */
-}
-
+}3
 
 
 
