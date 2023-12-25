@@ -3,7 +3,7 @@ public class pattern {
    
     public static void main(String args[]){
        
-      pat5(5);
+      pat6(4);
     
 }
 
@@ -14,22 +14,46 @@ public class pattern {
 
 
 public static void pat6(int row){
-    int k=1;
-    for(int i=0; i<=row; i++){
+
+    for(int i=1; i<=row; i++){
         for(int j=1; j<=i; j++){
-            System.out.print(" "+k++);
+            System.out.print("*");
+        }
+for(int j=1; j<=((row-i)*2); j++){
+            System.out.print(" ");
+        }
+
+        for(int j=1; j<=i; j++){
+            System.out.print("*");
         }
         
     System.out.println();
     }
     
+for(int i=row; i>=0; i--){
+        for(int j=i; j>=1; j--){
+            System.out.print("*");
+        }
+        for(int j=1; j<=((row-i)*2); j++){
+            System.out.print(" ");
+        }
 
+        for(int j=i; j>=1; j--){
+            System.out.print("*");
+        }
+        
+    System.out.println();
+    }
 
     /* output
-       1
-       23
-       456
-       78910
+*      *
+**    **
+***  ***
+********
+********
+***  ***
+**    **
+*      *
      */
 }
 
@@ -42,6 +66,7 @@ public static void pat5(int row){
         for(int j=1; j<=i; j++){
              
             if((i+j)%2==0){
+                 
             System.out.print("1");
         
             } else {
@@ -58,10 +83,11 @@ public static void pat5(int row){
 
 
     /* output
-       1
-       01
-       101
-       0101
+      1
+01
+101
+0101
+10101
      */
 }
 
