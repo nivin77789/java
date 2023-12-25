@@ -12,25 +12,24 @@ public class pattern {
 
 
 public static void pat9(int row){
-    int star=1;
+
     for(int i=1; i<=row; i++){
         for(int j=0; j<(row-i); j++){
             System.out.print("   ");
         }
-        for(int j=0; j<star; j++){
+        for(int j=0; j<(2*i)-1; j++){
             System.out.print(" * ");
         }
-        star+=2;
     System.out.println();
     }
      for(int i=row; i>=1; i--){
         for(int j=(row-i); j>0; j--){
             System.out.print("   ");
         }
-        for(int j=star; j>2; j--){
+        for(int j=(2*i)-1; j>0; j--){
             System.out.print(" * ");
         }
-        star-=2;
+     
     System.out.println();
     }
 
