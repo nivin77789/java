@@ -3,7 +3,7 @@ public class pattern {
    
     public static void main(String args[]){
        
-      pat6(5);
+      pat5(5);
     
 }
 
@@ -37,19 +37,20 @@ public static void pat6(int row){
 
 
 public static void pat5(int row){
-    boolean iszero=false;
-    for(int i=0; i<=row; i++){
+
+    for(int i=1; i<=row; i++){
         for(int j=1; j<=i; j++){
-            if(iszero){
-            System.out.print("0");
-            iszero=false;
+             
+            if((i+j)%2==0){
+            System.out.print("1");
+        
             } else {
-                System.out.print("1");
-                iszero=true;
-            }
+                System.out.print("0");
             
+            }
+             
         }
-        iszero=(!iszero);
+
         
     System.out.println();
     }
