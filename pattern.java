@@ -3,10 +3,49 @@ public class pattern {
    
     public static void main(String args[]){
        
-      pat8(4);
+      pat9(4);
     
 }
 
+
+
+
+
+public static void pat9(int row){
+    int star=1;
+    for(int i=1; i<=row; i++){
+        for(int j=0; j<(row-i); j++){
+            System.out.print("   ");
+        }
+        for(int j=0; j<star; j++){
+            System.out.print(" * ");
+        }
+        star+=2;
+    System.out.println();
+    }
+     for(int i=row; i>=1; i--){
+        for(int j=(row-i); j>0; j--){
+            System.out.print("   ");
+        }
+        for(int j=star; j>2; j--){
+            System.out.print(" * ");
+        }
+        star-=2;
+    System.out.println();
+    }
+
+
+    /* output
+          * 
+       *  *  * 
+    *  *  *  *  * 
+ *  *  *  *  *  *  * 
+ *  *  *  *  *  *  * 
+    *  *  *  *  * 
+       *  *  * 
+          * 
+     */
+}
 
 
 public static void pat8(int row){
@@ -32,9 +71,9 @@ public static void pat8(int row){
 
     /* output
     ****
-   ****
-  ****
- ****
+   *  *
+  *  *
+ *  *
 ****
      */
 }
