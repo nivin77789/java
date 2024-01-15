@@ -1,24 +1,19 @@
+import java.util.*;
 public class array {
-    public static int update(String marks[],String key){
+    public static int update(int marks[]){
+        int largest=Integer.MIN_VALUE;
          for(int i=0; i<marks.length; i++){
-           if(marks[i]==key){
-            return i;
+           if(largest<marks[i]){
+            largest=marks[i];
            }
         }
-        return -1;
+        return largest;
 
     }
     public static void main(String args[]){
-        String marks[]={"idli","dosa","chutny","biriyani","kabab","masala","tea"};
-      String key="biriyani";
- int index=update(marks , key);
-       
- if(index==-1){
-System.out.println("NOT FOUND");
- } else {
-    System.out.println("item foud at position : " +marks[index]);
- }
-        
+       int marks[]={99191,2,34,435,56,23,34546,546,546,3223,23};
+       int largest=update(marks);
+       System.err.println("largest=  "+largest);
 
     }
     
