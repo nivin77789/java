@@ -4,7 +4,7 @@ public class ArraySearch {
             int start = 0, end = arr.length - 1;
     
             while (start <= end) {
-                int mid = start + (end - start) / 2;
+                int mid = (end + start) / 2;
     
                 if (arr[mid] == key) {
                     return mid; // Key found

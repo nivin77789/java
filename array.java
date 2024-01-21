@@ -1,24 +1,32 @@
 public class array{
-    public static int binarySearch(int marks[], int key) {
-        int start = 0, end = marks.length - 1;
+    public static int search(int arr[] , int key){
+        int start = 0, end = arr.length - 1;
+    
         while (start <= end) {
-            int mid = (start + end) / 2;
-            if (marks[mid] == key) {
-                return mid;
+            int mid = (end + start) / 2;
+
+            if (arr[mid] == key) {
+                return mid; // Key found
             }
-            if (marks[mid] < key) {
-                start = mid + 1;
+
+            if (arr[mid] < key) {
+                start = mid + 1; // Search in the right half
             } else {
-                end = mid - 1;
+                end = mid - 1; // Search in the left half
             }
         }
-        return -1;
+
+        return -1; // Key not found
     }
-
-    public static void main(String args[]) {
-        int marks[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int key = 8;
-
-        System.out.println("Position = " + binarySearch(marks, key));
+    public static void main(String args[]){
+        int arr[]={1,3,5,7,8,9,12,15};
+        int key=12;
+        int pos=search(arr,key)+1;
+        if(pos==-1){
+            System.out.println("Key not found");
+        } else {
+            System.out.println(key+" is there in the position : "+pos);
+        }
+        
     }
 }
