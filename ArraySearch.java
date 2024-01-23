@@ -54,7 +54,7 @@ public class ArraySearch {
             int max=arr[0];
             int sum=0;
             int pr[]=new int[arr.length];
-            
+            pr[0]=arr[0];
 
             for(int i=1; i<pr.length; i++){
                 pr[i]=pr[i-1]+arr[i];
