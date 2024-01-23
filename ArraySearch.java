@@ -25,7 +25,8 @@ public class ArraySearch {
                 }
         }
         public static void subarray(int arr[]){
-            int min=arr[0], max=arr[0];
+            int max=arr[0];
+           
             for(int i=0; i<arr.length; i++){
     
                 for(int j=i; j<arr.length; j++){
@@ -33,20 +34,50 @@ public class ArraySearch {
                     for(int k=i; k<=j; k++){
                         System.out.print(" "+arr[k]);
                         sum+=arr[k];
+                        
+                        
                     }
                         if(sum>max){
                          max=sum;
                         }
-                        
+                      
                     System.out.print(" sum = "+sum+"  |");
                 }
                     System.out.println();
                 }
                 System.out.println("(  maximum sum = "+max+"  )");
+
+                
+        }
+
+        public static void prefix(int arr[]){
+            int max=arr[0];
+            int sum=0;
+            int pr[]=new int[arr.length];
+            
+
+            for(int i=1; i<pr.length; i++){
+                pr[i]=pr[i-1]+arr[i];
+            }
+           
+            for(int i=0; i<arr.length; i++){
+    
+                for(int j=i; j<arr.length; j++){
+                  
+                    sum=i==0 ? pr[j] : pr[j]-pr[i-1];
+                        if(sum>max){
+                         max=sum;
+                        }                
+                }
+      
+                }
+                System.out.println("maximum sum = "+max);
+
+                
         }
         public static void main(String[] args) {
             int arr[] = {1,-2,6,-1,3};
-            subarray(arr);
+            prefix(arr);
             
     
            
