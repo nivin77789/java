@@ -88,9 +88,9 @@ public class ArraySearch {
             System.out.println("maximun is   "+maxsum);
         }
         public static void main(String[] args) {
-            int arr[] = {-2,-3,4,-1,-2,1,5,-3};
+            int arr[] = {-2,-1,-9,-6,-1,-9};
             kadans(arr);
-            
+            prefix(arr);
     
            
         }
