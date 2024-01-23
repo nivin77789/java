@@ -34,17 +34,15 @@ public class ArraySearch {
                         System.out.print(" "+arr[k]);
                         sum+=arr[k];
                     }
-if(sum>max){
-    max=sum;
-}
-if(sum<min){
-min=sum;
-}
+                        if(sum>max){
+                         max=sum;
+                        }
+                        
                     System.out.print(" sum = "+sum+"  |");
                 }
                     System.out.println();
                 }
-                System.out.println("(  minimum sum = "+min+" maximum sum = "+max+"  )");
+                System.out.println("(  maximum sum = "+max+"  )");
         }
         public static void main(String[] args) {
             int arr[] = {1,-2,6,-1,3};
