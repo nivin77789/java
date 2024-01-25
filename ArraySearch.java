@@ -74,7 +74,21 @@ public class ArraySearch {
                 System.out.println("maximum sum = "+max);
 
                 
-        
+        }
+        public static void kadans(int arr[]){
+            int currsum=0;
+            int maxsum=Integer.MIN_VALUE;
+            for(int i=0; i<arr.length; i++){
+                currsum=currsum+arr[i];
+                if(currsum<0){
+                    currsum=0;
+                }
+                maxsum=Math.max(currsum,maxsum);
+            }
+            System.out.println("maximun is   "+maxsum);
+        }
+        public static void main(String[] args) {
+            int arr[] = {-2,-1,-9,-6,-1,-9};
             kadans(arr);
             prefix(arr);
     
