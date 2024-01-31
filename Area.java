@@ -11,7 +11,7 @@ public class Area {
         }
       void  square(){
             double square;
-            System.out.println("Enter the area : ");
+            System.out.println("Enter the length : ");
             float a=sc.nextFloat();
             square=a*a;
             System.out.println("The area of the square is "+square);

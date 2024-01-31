@@ -28,10 +28,6 @@ public class MyClass extends Area {
       }
    
 
-     
     }
-  
-
-    
         
 }
