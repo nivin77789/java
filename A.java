@@ -1,10 +1,3 @@
-public class A extends C{
-  int a;
-    void display(){
-        System.out.println("Its A Display");
-        super.display();
-       
-
-
-    }
+public abstract class A{
+  abstract void onText(String text);
 }

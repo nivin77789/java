@@ -1,9 +1,14 @@
-public class C {
-   
-    void display(){
-        System.out.println("its C display");
+public class C extends A{
+    void onText(String text){
+        System.out.println(text);
     }
-    void displayr(int r){
-        System.out.println("its C display "+r);
-    }
+   C(){
+    B b=new B(this);
+    b.scan();
+   }
+    public static void main(String ar[]){
+       
+        C c=new C();
+               
+            }
 }

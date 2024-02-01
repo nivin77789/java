@@ -1,9 +1,10 @@
 public class B {
-    int b;
-    public static void main(String ar[]){
-A a=new A();
-a.display();
-
-       
-    }
+A obj;
+public B(A obj){
+    this.obj=obj;
+}
+void scan(){
+   
+    obj.onText("scanned text");
+}
 }
