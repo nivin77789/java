@@ -1,7 +1,10 @@
-public class A {
-    static int a;
+public class A extends C{
+  int a;
     void display(){
-C c=new C();
-c.display();
+        System.out.println("Its A Display");
+        super.display();
+       
+
+
     }
 }
